@@ -25,6 +25,6 @@ public class Counter : MonoBehaviour
     void UpdateCountText()
     {
         // ????????????
-        countText.text = "×" + count.ToString();
+        countText.text = "count: " + count.ToString();
     }
 }

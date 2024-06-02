@@ -67,7 +67,6 @@ void ExampleMove()
 
         if(_moveState != 0)
         {
-            Debug.Log("Yep");
             Physics.SphereCast(_maincamera.transform.position, _capsule.radius + 0.01f, Vector3.down, out RaycastHit hit, _maincamera.transform.position.y - transform.position.y + _capsule.height * 0.5f * transform.lossyScale.y);
             Physics.Raycast(hit.point + Vector3.up, Vector3.down, out hit, 1.1f);
             _accum -= Vector3.Dot(hit.normal, _accum) * hit.normal;
