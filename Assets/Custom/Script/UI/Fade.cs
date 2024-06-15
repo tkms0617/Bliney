@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Fade : MonoBehaviour
 {
     public bool isFadeout = false;
-    float speed = 0.01f;
+    float speed = 0.02f;
     Image fadepanel;
     float red, green, blue, alpha;
 

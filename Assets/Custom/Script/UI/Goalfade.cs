@@ -13,19 +13,24 @@ public class Goalfade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(Fade == null) Fade = GameObject.Find("Fadepanel");
+        if (Fade == null) Fade = GameObject.Find("Fadepanel");
         script = Fade.GetComponent<Fade>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnTriggerEnter(Collider other)
     {
-        script.isFadeout = true;
-        Text.SetActive(true);
+        {
+            // ??????????????? "Player" ???????????????
+            if (other.CompareTag("Player"))
 
+                script.isFadeout = true;
+            Text.SetActive(true);
+
+        }
     }
 }
