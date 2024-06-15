@@ -75,8 +75,9 @@ public class Move : MonoBehaviour
         MoveByKey(KeyCode.S, -_maincamera.transform.forward, ref _accum);
         MoveByKey(KeyCode.D, _maincamera.transform.right, ref _accum);
 
-        if (Physics.SphereCast(transform.position, _capsule.radius * transform.lossyScale.x - 0.01f, Vector3.down, out _hit, _maincamera.transform.position.y - transform.position.y + _capsule.height * 0.5f * transform.lossyScale.y + 0.1f))
+        if (Physics.SphereCast(transform.position, _capsule.radius * transform.lossyScale.x - 0.01f, Vector3.down, out _hit, _capsule.height * 0.5f * transform.lossyScale.x - _capsule.radius * transform.lossyScale.x + 0.02f))
         {
+            Debug.Log("Yep");
             _accum -= Vector3.Dot(_hit.normal, _accum) * _hit.normal;
             _accum.Normalize();
             _accum *= speed;
