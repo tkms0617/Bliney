@@ -28,6 +28,6 @@ public class Counter : MonoBehaviour
     void UpdateCountText()
     {
         // ????????????
-        countText.text = "count: " + count.ToString();
+        countText.text = "×" + count.ToString();
     }
 }
