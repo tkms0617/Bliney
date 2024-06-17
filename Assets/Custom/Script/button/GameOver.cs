@@ -10,6 +10,8 @@ public class GameOver : MonoBehaviour
     public GameObject _enemy;
     public GameObject _camera;
 
+    public string sceneName;
+
     NavMeshAgent _navMeshAgent;
     firstPerson _firstPerson;
     Move _move;
@@ -66,6 +68,6 @@ public class GameOver : MonoBehaviour
 
     void Over()
     {
-        SceneManager.LoadScene("GAMEOVER");
+        SceneManager.LoadScene(sceneName);
     }
 }

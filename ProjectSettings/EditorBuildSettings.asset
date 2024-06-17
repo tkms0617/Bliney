@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/BLINEY.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/GAMEOVER.unity
+    path: Assets/Scenes/GAMEOVER1.unity
     guid: 4313168dac571ca4bbcf21d0f16ae8f0
   - enabled: 1
     path: Assets/Scenes/stage3.unity
@@ -20,7 +20,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/stage2.unity
     guid: 22f2368c796d7b3439ef418e46a4840e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/stage1.unity
     guid: 7c008c46fa6ccc54ba8e89c4172fbaa0
+  - enabled: 0
+    path: Assets/Scenes/GAMEOVER2.unity
+    guid: 63eed809eabdddd4db46d7130fd4c467
+  - enabled: 1
+    path: Assets/Scenes/GAMEOVER3.unity
+    guid: ff7d3e2f656374941b9849aa9e63303c
   m_configObjects: {}
