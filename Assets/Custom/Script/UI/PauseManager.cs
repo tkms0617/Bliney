@@ -44,6 +44,8 @@ public class PauseManager : MonoBehaviour
         SetPauseMenuActive(true);
 
         isPaused = true;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     void ResumeGame()
@@ -55,6 +57,8 @@ public class PauseManager : MonoBehaviour
         SetPauseMenuActive(false);
 
         isPaused = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void QuitGame()

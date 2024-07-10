@@ -17,5 +17,9 @@ public class StartButton : MonoBehaviour
     private void ChangeScene()
     {
         SceneManager.LoadScene(sceneName); // ????????
+
+        Time.timeScale = 1f; // ????????????
+        AudioListener.pause = false;
+        Camera.main.GetComponent<firstPerson>().enabled = true;
     }
 }

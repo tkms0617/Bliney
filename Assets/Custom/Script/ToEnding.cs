@@ -1,0 +1,42 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ToEnding : MonoBehaviour
+{
+    public string sceneToLoad; // ????????????????????
+
+    private bool hasPlayerTouched = false;
+    private float timer = 0f;
+    private float waitTime = 2.5f; // ???????
+
+    void OnTriggerEnter(Collider other)
+    {
+        // Player??????????????????
+        if (other.CompareTag("Player"))
+        {
+            hasPlayerTouched = true;
+            timer = 0f; // ?????????
+        }
+    }
+
+    void Update()
+    {
+        if (hasPlayerTouched)
+        {
+            timer += Time.unscaledDeltaTime; // ??????????????
+
+            if (timer >= waitTime)
+            {
+                ChangeScene();
+            }
+        }
+    }
+
+    void ChangeScene()
+    {
+        Time.timeScale = 1f; // ????????????????
+
+        // ????????
+        SceneManager.LoadScene(sceneToLoad);
+    }
+}
