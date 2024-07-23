@@ -7,7 +7,7 @@ public class ToEnding : MonoBehaviour
 
     private bool hasPlayerTouched = false;
     private float timer = 0f;
-    private float waitTime = 2.5f; // ???????
+    private float waitTime = 3.5f; // ???????
 
     void OnTriggerEnter(Collider other)
     {
