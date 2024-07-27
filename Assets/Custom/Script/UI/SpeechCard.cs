@@ -12,6 +12,6 @@ public class SpeechCard
     public void Print(TextMeshProUGUI Speaker, TextMeshProUGUI Speech)
     {
         Speaker.text = _speaker;
-        Speech.text = _speech;
+        Speech.text = _speech.Replace("\\", "\n");
     }
 }
