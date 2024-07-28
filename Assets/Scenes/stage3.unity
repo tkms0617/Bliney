@@ -15914,7 +15914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -58, y: -317.5}
+  m_AnchoredPosition: {x: -8.9, y: -317.5}
   m_SizeDelta: {x: 1335.3, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &397737828
@@ -15939,8 +15939,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: You got all Item!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 521893521b6eb2941ac08cb5d8b4707c, type: 2}
-  m_sharedMaterial: {fileID: 1933726652249348954, guid: 521893521b6eb2941ac08cb5d8b4707c,
+  m_fontAsset: {fileID: 11400000, guid: fd42bf7cbb2c81844a77ba3527133f9c, type: 2}
+  m_sharedMaterial: {fileID: -6559607309624674163, guid: fd42bf7cbb2c81844a77ba3527133f9c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -15975,7 +15975,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: -9
+  m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -33628,6 +33628,7 @@ GameObject:
   - component: {fileID: 769695590}
   - component: {fileID: 769695589}
   - component: {fileID: 769695588}
+  - component: {fileID: 769695597}
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Player
@@ -33760,8 +33761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5f37dda7f9c8e419bddcd902fdbba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1.1
-  _slideamount: 1.25
+  _speed: 1
+  _slideamount: 1.15
   _enemy: {fileID: 1570898557}
   _camera: {fileID: 372780347}
   sceneName: GAMEOVER3
@@ -33877,6 +33878,20 @@ Transform:
   - {fileID: 372780348}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &769695597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769695587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffd444134f2aba45b0f9e216dc02cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundClip: {fileID: 8300000, guid: 63a34716baeb67742a33bfd953b7bcd2, type: 3}
+  volume: 50
 --- !u!1 &775914749
 GameObject:
   m_ObjectHideFlags: 0
@@ -58526,8 +58541,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 521893521b6eb2941ac08cb5d8b4707c, type: 2}
-  m_sharedMaterial: {fileID: 1933726652249348954, guid: 521893521b6eb2941ac08cb5d8b4707c,
+  m_fontAsset: {fileID: 11400000, guid: fd42bf7cbb2c81844a77ba3527133f9c, type: 2}
+  m_sharedMaterial: {fileID: -6559607309624674163, guid: fd42bf7cbb2c81844a77ba3527133f9c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -63088,7 +63103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1272270440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81163,14 +81178,14 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.06666667
-      value: 0.5061226
-      inSlope: -0.5525674
-      outSlope: -0.5525674
+      time: 0
+      value: 0.40073013
+      inSlope: -0.28728458
+      outSlope: -0.28728458
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.19132848
+      outWeight: 0.23015164
     - serializedVersion: 3
       time: 1
       value: 0
@@ -104917,8 +104932,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 521893521b6eb2941ac08cb5d8b4707c, type: 2}
-  m_sharedMaterial: {fileID: 1933726652249348954, guid: 521893521b6eb2941ac08cb5d8b4707c,
+  m_fontAsset: {fileID: 11400000, guid: fd42bf7cbb2c81844a77ba3527133f9c, type: 2}
+  m_sharedMaterial: {fileID: -6559607309624674163, guid: fd42bf7cbb2c81844a77ba3527133f9c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

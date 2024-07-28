@@ -2648,6 +2648,7 @@ GameObject:
   - component: {fileID: 123016105}
   - component: {fileID: 123016104}
   - component: {fileID: 123016102}
+  - component: {fileID: 123016111}
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Player
@@ -2763,8 +2764,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5f37dda7f9c8e419bddcd902fdbba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1.1
-  _slideamount: 1.25
+  _speed: 1
+  _slideamount: 1.15
   _enemy: {fileID: 199173777}
   _camera: {fileID: 513589039}
   sceneName: GAMEOVER1
@@ -2866,6 +2867,20 @@ Transform:
   - {fileID: 513589048}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &123016111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123016101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ffd444134f2aba45b0f9e216dc02cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundClip: {fileID: 8300000, guid: 63a34716baeb67742a33bfd953b7bcd2, type: 3}
+  volume: 50
 --- !u!1 &132903174
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,8 +3720,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 521893521b6eb2941ac08cb5d8b4707c, type: 2}
-  m_sharedMaterial: {fileID: 1933726652249348954, guid: 521893521b6eb2941ac08cb5d8b4707c,
+  m_fontAsset: {fileID: 11400000, guid: fd42bf7cbb2c81844a77ba3527133f9c, type: 2}
+  m_sharedMaterial: {fileID: -6559607309624674163, guid: fd42bf7cbb2c81844a77ba3527133f9c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4479,22 +4494,22 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.06666667
-      value: 0.5093384
-      inSlope: -0.5899816
-      outSlope: -0.5899816
+      time: 0
+      value: 0.39340973
+      inSlope: -0.22730799
+      outSlope: -0.22730799
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.22360513
+      outWeight: 0.21231042
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: -0.575134
-      outSlope: -0.575134
+      inSlope: -0.69280356
+      outSlope: -0.69280356
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.19927925
+      inWeight: 0.21677077
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -25749,8 +25764,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 521893521b6eb2941ac08cb5d8b4707c, type: 2}
-  m_sharedMaterial: {fileID: 1933726652249348954, guid: 521893521b6eb2941ac08cb5d8b4707c,
+  m_fontAsset: {fileID: 11400000, guid: fd42bf7cbb2c81844a77ba3527133f9c, type: 2}
+  m_sharedMaterial: {fileID: -6559607309624674163, guid: fd42bf7cbb2c81844a77ba3527133f9c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -34493,8 +34508,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: You got all Item!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9ae16acb6eaf0aa4eacf76864bd2abcb, type: 2}
-  m_sharedMaterial: {fileID: -9109288285255389148, guid: 9ae16acb6eaf0aa4eacf76864bd2abcb,
+  m_fontAsset: {fileID: 11400000, guid: fd42bf7cbb2c81844a77ba3527133f9c, type: 2}
+  m_sharedMaterial: {fileID: -6559607309624674163, guid: fd42bf7cbb2c81844a77ba3527133f9c,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -34535,7 +34550,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -34585,7 +34600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 74.22, y: -317.5}
+  m_AnchoredPosition: {x: 23.2, y: -317.5}
   m_SizeDelta: {x: 1335.3, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1963539723
