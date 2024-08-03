@@ -66,4 +66,21 @@ public class SpeechCards : MonoBehaviour
             FlipCard();
         }
     }
+
+    public void ResetCard()
+    {
+        _index = 0;
+        FlipCard();
+    }
+
+    public void FlipNext()
+    {
+        FlipCard();
+    }
+
+    public void FlipPrevious()
+    {
+        _index -= 2;
+        FlipCard();
+    }
 }
