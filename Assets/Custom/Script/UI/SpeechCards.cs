@@ -13,7 +13,7 @@ public class SpeechCards : MonoBehaviour
     [SerializeField] TextMeshProUGUI _speakerSlot;
     [SerializeField] TextMeshProUGUI _speechSlot;
     [SerializeField] Image _speechBox;
-    UnityEvent _events;
+    [SerializeField] UnityEvent _events;
 
     byte _index = 0;
 
