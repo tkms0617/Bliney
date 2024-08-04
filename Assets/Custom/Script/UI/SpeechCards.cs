@@ -38,18 +38,18 @@ public class SpeechCards : MonoBehaviour
             _speechBox.gameObject.SetActive(true);
             _speechCards[_index].Print(_speakerSlot, _speechSlot);
         }
-        else
+        else if(_speechCards.Length == _index)
         {
-            if(_events != null)
-            {
-                _events.Invoke();
-                _events = null;
-            }
+            _events.Invoke();
             _speakerSlot.text = "";
             _speechSlot.text = "";
             _speechBox.gameObject.SetActive(false);
         }
-        ++_index;
+
+        if( _speechCards.Length >= _index)
+        {
+            ++_index;
+        }
     }
 
     public void NewStashOfCards(SpeechCard[] cards, bool autoStart, UnityEvent _Event = null)
