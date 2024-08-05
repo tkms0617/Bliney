@@ -4462,7 +4462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7647c0a7dafed749a65de64705cd5bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wanderRange: 20
+  wanderRange: 16
 --- !u!82 &199173781
 AudioSource:
   m_ObjectHideFlags: 0
